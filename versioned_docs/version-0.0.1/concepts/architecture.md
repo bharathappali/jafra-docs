@@ -3,7 +3,7 @@ title: How Jafra works
 sidebar_position: 1
 ---
 
-import architectureImage from '../../../assets/imgs/jafra_v001_arch_n_flow.png';
+import architectureImage from '@site/assets/imgs/jafra_v001_arch_n_flow.png';
 
 Jafra coordinates three distinct responsibilities: async-profiler records JVM
 events, node-local Agents collect completed JFR chunks, and the Analyzer
