@@ -9,7 +9,7 @@ applies JDK Mission Control rules. Application teams get continuous evidence
 without packaging recording infrastructure into every service.
 
 ```mermaid
-flowchart LR
+flowchart TB
     apiServer["Kubernetes API server"]
     controller["jafra-controller webhook"]
     pod["Opted-in Java Pod"]

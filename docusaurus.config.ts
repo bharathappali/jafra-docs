@@ -70,12 +70,6 @@ const config: Config = {
       title: 'Jafra Docs',
       items: [
         {
-          type: 'docSidebar',
-          sidebarId: 'jafraSidebar',
-          position: 'left',
-          label: 'Documentation',
-        },
-        {
           type: 'dropdown',
           label: `v${latestVersion}`,
           position: 'right',
