@@ -2,9 +2,9 @@
 node_modules/
 
 # Docusaurus output and caches
-build/
-.docusaurus/
-.cache-loader/
+/build/
+/.docusaurus/
+/.cache-loader/
 
 # Local environment
 .env
