@@ -91,6 +91,43 @@ body {
   padding-left: 0.75rem;
 }
 
+.github-repo-chip {
+  align-items: center;
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--jafra-border);
+  border-radius: 999px;
+  display: inline-flex;
+  font-size: 0.88rem;
+  font-weight: 650;
+  gap: 0.48rem;
+  margin-left: 0.6rem;
+  padding: 0.38rem 0.72rem !important;
+  transition:
+    background-color 160ms ease,
+    border-color 160ms ease,
+    transform 160ms ease;
+}
+
+.github-repo-chip::before {
+  background: currentColor;
+  content: '';
+  display: block;
+  height: 1rem;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 .7a11.5 11.5 0 0 0-3.64 22.4c.58.1.79-.25.79-.56v-2.23c-3.24.7-3.92-1.37-3.92-1.37-.53-1.35-1.3-1.71-1.3-1.71-1.06-.73.08-.71.08-.71 1.17.08 1.79 1.2 1.79 1.2 1.04 1.79 2.73 1.27 3.4.97.1-.76.41-1.27.74-1.56-2.58-.29-5.3-1.29-5.3-5.69 0-1.26.45-2.28 1.2-3.09-.12-.29-.52-1.47.11-3.05 0 0 .98-.31 3.16 1.18a10.9 10.9 0 0 1 5.76 0c2.19-1.49 3.16-1.18 3.16-1.18.64 1.58.24 2.76.12 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.72 5.39-5.31 5.68.42.36.79 1.07.79 2.16v3.21c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .7Z'/%3E%3C/svg%3E") center / contain no-repeat;
+  width: 1rem;
+}
+
+.github-repo-chip:hover {
+  background: color-mix(in srgb, var(--jafra-lavender) 14%, var(--ifm-background-color));
+  border-color: var(--ifm-color-primary);
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
+.github-repo-chip svg {
+  display: none;
+}
+
 .theme-doc-sidebar-container {
   background: color-mix(in srgb, var(--jafra-cloud) 58%, transparent);
   border-right-color: var(--jafra-border) !important;
@@ -150,6 +187,22 @@ body {
   box-shadow: 0 8px 28px color-mix(in srgb, var(--jafra-violet) 12%, transparent);
 }
 
+.docusaurus-mermaid-container {
+  margin: 2rem 0;
+  overflow-x: auto;
+  padding: 1rem 0;
+  width: 100%;
+}
+
+.docusaurus-mermaid-container svg {
+  display: block;
+  height: auto !important;
+  margin: 0 auto;
+  max-width: none !important;
+  min-width: 680px;
+  width: 100% !important;
+}
+
 .alert {
   border: 1px solid var(--jafra-border);
   border-left-width: 4px;
@@ -175,9 +228,25 @@ body {
   border-top: 1px solid color-mix(in srgb, var(--jafra-lavender) 25%, transparent);
 }
 
+@media (min-width: 1200px) {
+  .docusaurus-mermaid-container {
+    margin: 2.5rem -5rem;
+    padding: 1.5rem;
+    width: calc(100% + 10rem);
+  }
+
+  .docusaurus-mermaid-container svg {
+    min-width: 760px;
+  }
+}
+
 @media (max-width: 996px) {
   .theme-doc-markdown h1 {
     font-size: 2.35rem;
+  }
+
+  .docusaurus-mermaid-container svg {
+    min-width: 620px;
   }
 
   .theme-doc-markdown table {

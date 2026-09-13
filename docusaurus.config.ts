@@ -86,8 +86,9 @@ const config: Config = {
         },
         {
           href: 'https://github.com/bharathappali/jafra-io',
-          label: 'GitHub',
+          label: 'jafra-io',
           position: 'right',
+          className: 'github-repo-chip',
         },
       ],
     },
@@ -118,7 +119,9 @@ const config: Config = {
       additionalLanguages: ['bash', 'java', 'protobuf'],
     },
     colorMode: {
-      respectPrefersColorScheme: true,
+      defaultMode: 'light',
+      disableSwitch: false,
+      respectPrefersColorScheme: false,
     },
   } satisfies ThemeConfig,
 };
