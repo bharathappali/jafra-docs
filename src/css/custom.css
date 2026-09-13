@@ -1,0 +1,185 @@
+:root {
+  --ifm-color-primary: #7868e6;
+  --ifm-color-primary-dark: #7868e6;
+  --ifm-color-primary-darker: #7868e6;
+  --ifm-color-primary-darkest: #7868e6;
+  --ifm-color-primary-light: #b8b5ff;
+  --ifm-color-primary-lighter: #b8b5ff;
+  --ifm-color-primary-lightest: #b8b5ff;
+  --ifm-background-color: #edeef7;
+  --ifm-background-surface-color: #edeef7;
+  --ifm-navbar-background-color: #edeef7;
+  --ifm-footer-background-color: #7868e6;
+  --ifm-font-color-base: #7868e6;
+  --ifm-heading-color: #7868e6;
+  --ifm-link-color: #7868e6;
+  --ifm-menu-color-active: #7868e6;
+  --ifm-toc-border-color: #b8b5ff;
+  --ifm-global-radius: 12px;
+  --ifm-code-font-size: 92%;
+  --ifm-font-family-base: -apple-system, BlinkMacSystemFont, "SF Pro Text",
+    "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --ifm-heading-font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display",
+    "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --jafra-lavender: #b8b5ff;
+  --jafra-violet: #7868e6;
+  --jafra-cloud: #edeef7;
+  --jafra-border: #b8b5ff;
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary: #b8b5ff;
+  --ifm-color-primary-dark: #b8b5ff;
+  --ifm-color-primary-darker: #b8b5ff;
+  --ifm-color-primary-darkest: #b8b5ff;
+  --ifm-color-primary-light: #edeef7;
+  --ifm-color-primary-lighter: #edeef7;
+  --ifm-color-primary-lightest: #edeef7;
+  --ifm-background-color: #7868e6;
+  --ifm-background-surface-color: #7868e6;
+  --ifm-navbar-background-color: #7868e6;
+  --ifm-font-color-base: #edeef7;
+  --ifm-heading-color: #edeef7;
+  --ifm-link-color: #b8b5ff;
+  --ifm-menu-color-active: #b8b5ff;
+  --ifm-toc-border-color: #b8b5ff;
+  --jafra-lavender: #b8b5ff;
+  --jafra-violet: #7868e6;
+  --jafra-cloud: #7868e6;
+  --jafra-border: #b8b5ff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--ifm-font-family-base);
+  letter-spacing: -0.006em;
+}
+
+.navbar {
+  border-bottom: 1px solid var(--jafra-border);
+  box-shadow: none;
+  backdrop-filter: blur(18px);
+}
+
+.navbar__title {
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}
+
+.navbar__items--right > .navbar__link[aria-current='page'],
+.navbar__items--right > .dropdown > .navbar__link {
+  align-items: center;
+  background: color-mix(in srgb, var(--jafra-lavender) 22%, transparent);
+  border: 1px solid var(--jafra-border);
+  border-radius: 9px;
+  display: inline-flex;
+  font-size: 0.88rem;
+  font-weight: 650;
+  min-width: 6.5rem;
+  padding: 0.42rem 0.7rem;
+}
+
+.navbar__items--right > .navbar__link[aria-current='page']::after {
+  content: '⌄';
+  font-size: 1rem;
+  line-height: 1;
+  margin-left: auto;
+  padding-left: 0.75rem;
+}
+
+.theme-doc-sidebar-container {
+  background: color-mix(in srgb, var(--jafra-cloud) 58%, transparent);
+  border-right-color: var(--jafra-border) !important;
+}
+
+.menu__link {
+  border-radius: 9px;
+  font-size: 0.94rem;
+}
+
+.menu__link--active:not(.menu__link--sublist) {
+  background: color-mix(in srgb, var(--jafra-lavender) 28%, transparent);
+  font-weight: 650;
+}
+
+.theme-doc-markdown {
+  max-width: 820px;
+}
+
+.theme-doc-markdown h1 {
+  font-size: clamp(2.25rem, 5vw, 3.5rem);
+  letter-spacing: -0.045em;
+  line-height: 1.05;
+  margin-bottom: 1.2rem;
+}
+
+.theme-doc-markdown h2 {
+  border-top: 1px solid var(--jafra-border);
+  font-size: 1.65rem;
+  letter-spacing: -0.03em;
+  margin-top: 3rem;
+  padding-top: 2rem;
+}
+
+.theme-doc-markdown h3 {
+  letter-spacing: -0.02em;
+}
+
+.theme-doc-markdown > p:first-of-type {
+  color: var(--ifm-color-emphasis-700);
+  font-size: 1.12rem;
+  line-height: 1.72;
+}
+
+.theme-doc-markdown table {
+  display: table;
+  width: 100%;
+}
+
+.theme-doc-markdown th {
+  background: var(--jafra-cloud);
+}
+
+.theme-code-block {
+  border: 1px solid var(--jafra-border);
+  border-radius: var(--ifm-global-radius);
+  box-shadow: 0 8px 28px color-mix(in srgb, var(--jafra-violet) 12%, transparent);
+}
+
+.alert {
+  border: 1px solid var(--jafra-border);
+  border-left-width: 4px;
+  border-radius: var(--ifm-global-radius);
+  box-shadow: none;
+}
+
+.release-scope {
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--jafra-cloud) 88%, transparent),
+    color-mix(in srgb, var(--jafra-lavender) 24%, transparent)
+  );
+  border: 1px solid var(--jafra-border);
+  border-radius: 14px;
+  color: var(--ifm-font-color-base);
+  font-size: 0.95rem;
+  margin-bottom: 2rem;
+  padding: 1rem 1.15rem;
+}
+
+.footer {
+  border-top: 1px solid color-mix(in srgb, var(--jafra-lavender) 25%, transparent);
+}
+
+@media (max-width: 996px) {
+  .theme-doc-markdown h1 {
+    font-size: 2.35rem;
+  }
+
+  .theme-doc-markdown table {
+    display: block;
+  }
+}

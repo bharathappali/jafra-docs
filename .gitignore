@@ -1,0 +1,15 @@
+# Dependencies
+node_modules/
+
+# Docusaurus output and caches
+build/
+.docusaurus/
+.cache-loader/
+
+# Local environment
+.env
+.env.local
+
+# Operating system and editor files
+.DS_Store
+*.swp
