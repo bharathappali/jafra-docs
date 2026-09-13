@@ -1,52 +1,53 @@
 :root {
-  --ifm-color-primary: #7868e6;
-  --ifm-color-primary-dark: #7868e6;
-  --ifm-color-primary-darker: #7868e6;
-  --ifm-color-primary-darkest: #7868e6;
-  --ifm-color-primary-light: #b8b5ff;
-  --ifm-color-primary-lighter: #b8b5ff;
-  --ifm-color-primary-lightest: #b8b5ff;
-  --ifm-background-color: #edeef7;
-  --ifm-background-surface-color: #edeef7;
-  --ifm-navbar-background-color: #edeef7;
-  --ifm-footer-background-color: #7868e6;
-  --ifm-font-color-base: #7868e6;
-  --ifm-heading-color: #7868e6;
-  --ifm-link-color: #7868e6;
-  --ifm-menu-color-active: #7868e6;
-  --ifm-toc-border-color: #b8b5ff;
+  --ifm-color-primary: #6d5bd0;
+  --ifm-color-primary-dark: #5945c6;
+  --ifm-color-primary-darker: #4f3abd;
+  --ifm-color-primary-darkest: #402f9e;
+  --ifm-color-primary-light: #8171d9;
+  --ifm-color-primary-lighter: #8d7ede;
+  --ifm-color-primary-lightest: #afa5e9;
+  --ifm-background-color: #ffffff;
+  --ifm-background-surface-color: #f8f7fc;
+  --ifm-navbar-background-color: rgba(255, 255, 255, 0.94);
+  --ifm-footer-background-color: #17131f;
+  --ifm-font-color-base: #26222d;
+  --ifm-heading-color: #17141d;
+  --ifm-link-color: #5945c6;
+  --ifm-menu-color-active: #5945c6;
+  --ifm-toc-border-color: #e5e0f0;
   --ifm-global-radius: 12px;
   --ifm-code-font-size: 92%;
   --ifm-font-family-base: -apple-system, BlinkMacSystemFont, "SF Pro Text",
     "Helvetica Neue", Helvetica, Arial, sans-serif;
   --ifm-heading-font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display",
     "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --jafra-lavender: #b8b5ff;
-  --jafra-violet: #7868e6;
-  --jafra-cloud: #edeef7;
-  --jafra-border: #b8b5ff;
+  --jafra-lavender: #b8adf0;
+  --jafra-violet: #6d5bd0;
+  --jafra-cloud: #f8f7fc;
+  --jafra-border: #e5e0f0;
 }
 
 [data-theme='dark'] {
-  --ifm-color-primary: #b8b5ff;
-  --ifm-color-primary-dark: #b8b5ff;
-  --ifm-color-primary-darker: #b8b5ff;
-  --ifm-color-primary-darkest: #b8b5ff;
-  --ifm-color-primary-light: #edeef7;
-  --ifm-color-primary-lighter: #edeef7;
-  --ifm-color-primary-lightest: #edeef7;
-  --ifm-background-color: #7868e6;
-  --ifm-background-surface-color: #7868e6;
-  --ifm-navbar-background-color: #7868e6;
-  --ifm-font-color-base: #edeef7;
-  --ifm-heading-color: #edeef7;
-  --ifm-link-color: #b8b5ff;
-  --ifm-menu-color-active: #b8b5ff;
-  --ifm-toc-border-color: #b8b5ff;
-  --jafra-lavender: #b8b5ff;
-  --jafra-violet: #7868e6;
-  --jafra-cloud: #7868e6;
-  --jafra-border: #b8b5ff;
+  --ifm-color-primary: #b6a8ff;
+  --ifm-color-primary-dark: #9b89ff;
+  --ifm-color-primary-darker: #8e79ff;
+  --ifm-color-primary-darkest: #654cff;
+  --ifm-color-primary-light: #d1c9ff;
+  --ifm-color-primary-lighter: #ded9ff;
+  --ifm-color-primary-lightest: #ffffff;
+  --ifm-background-color: #0f0d14;
+  --ifm-background-surface-color: #18141f;
+  --ifm-navbar-background-color: rgba(15, 13, 20, 0.94);
+  --ifm-footer-background-color: #09080c;
+  --ifm-font-color-base: #e9e6ef;
+  --ifm-heading-color: #ffffff;
+  --ifm-link-color: #b6a8ff;
+  --ifm-menu-color-active: #c8beff;
+  --ifm-toc-border-color: #30293c;
+  --jafra-lavender: #b6a8ff;
+  --jafra-violet: #8e79ff;
+  --jafra-cloud: #18141f;
+  --jafra-border: #30293c;
 }
 
 html {
