@@ -187,6 +187,27 @@ body {
   box-shadow: 0 8px 28px color-mix(in srgb, var(--jafra-violet) 12%, transparent);
 }
 
+.architecture-visual {
+  margin: 2rem 0 2.5rem;
+  text-align: center;
+  width: 100%;
+}
+
+.architecture-visual img {
+  border: 1px solid var(--jafra-border);
+  border-radius: 14px;
+  box-shadow: 0 14px 38px color-mix(in srgb, var(--jafra-violet) 14%, transparent);
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.architecture-visual figcaption {
+  color: var(--ifm-color-emphasis-600);
+  font-size: 0.82rem;
+  margin-top: 0.65rem;
+}
+
 .docusaurus-mermaid-container {
   margin: 2rem 0;
   overflow-x: auto;
@@ -229,6 +250,11 @@ body {
 }
 
 @media (min-width: 1200px) {
+  .architecture-visual {
+    margin-left: -5rem;
+    width: calc(100% + 10rem);
+  }
+
   .docusaurus-mermaid-container {
     margin: 2.5rem -5rem;
     padding: 1.5rem;
