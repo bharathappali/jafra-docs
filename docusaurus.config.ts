@@ -23,6 +23,7 @@ const config: Config = {
   organizationName: 'bharathappali',
   projectName: 'jafra-docs',
   onBrokenLinks: 'throw',
+  staticDirectories: ['static', 'assets'],
   markdown: {
     mermaid: true,
     hooks: {
@@ -68,6 +69,10 @@ const config: Config = {
   themeConfig: {
     navbar: {
       title: 'Jafra Docs',
+      logo: {
+        alt: 'Jafra',
+        src: 'imgs/logo/jafra-logo.png',
+      },
       items: [
         {
           type: 'dropdown',

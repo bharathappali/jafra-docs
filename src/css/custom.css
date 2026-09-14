@@ -70,6 +70,17 @@ body {
   letter-spacing: -0.025em;
 }
 
+.navbar__logo {
+  height: 2.15rem;
+  margin-right: 0.55rem;
+}
+
+.navbar__logo img {
+  height: 100%;
+  object-fit: contain;
+  width: auto;
+}
+
 .navbar__items--right > .navbar__link[aria-current='page'],
 .navbar__items--right > .dropdown > .navbar__link {
   align-items: center;
