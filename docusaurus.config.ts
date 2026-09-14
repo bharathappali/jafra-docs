@@ -18,6 +18,7 @@ const versionOptions = Object.fromEntries(
 const config: Config = {
   title: 'Jafra',
   tagline: 'Automated JVM flight recording and JMC analysis',
+  favicon: 'imgs/logo/favicon_io/favicon-32x32.png',
   url: 'https://docs.jafra.io',
   baseUrl: '/',
   organizationName: 'bharathappali',
@@ -71,7 +72,7 @@ const config: Config = {
       title: 'Jafra Docs',
       logo: {
         alt: 'Jafra',
-        src: 'imgs/logo/jafra-logo.png',
+        src: 'imgs/logo/favicon_io/android-chrome-192x192.png',
       },
       items: [
         {
