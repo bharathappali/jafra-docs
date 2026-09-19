@@ -56,9 +56,14 @@ even if the YAML still lists another tag. Prefer:
 JAFRA_REGISTRY=quay.io/bharathappali JAFRA_VERSION=0.0.2 ./pull-jafra.sh --force-pull
 ```
 
-For OpenShift, use `./install-jafra.sh --target openshift --deploy-only` (and
-`--install-cert-manager` when needed) after images are available in the
-registry.
+For OpenShift, use [Install on OpenShift](./openshift-install.md) and review
+[OpenShift security and SCCs](./openshift-security.md) before binding SCCs:
+
+```bash
+./install-jafra.sh --target openshift --deploy-only
+# or with cert-manager
+./install-jafra.sh --target openshift --install-cert-manager
+```
 
 ## Verify installation
 

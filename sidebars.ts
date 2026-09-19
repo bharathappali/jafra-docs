@@ -28,6 +28,8 @@ const sidebars: SidebarsConfig = {
       items: [
         'build/build-images',
         'deploy/kind-install',
+        'deploy/openshift-install',
+        'deploy/openshift-security',
         'deploy/manual-components',
         'use/analyzer-api',
       ],

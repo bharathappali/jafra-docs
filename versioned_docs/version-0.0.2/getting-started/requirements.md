@@ -58,4 +58,6 @@ and build context for each component.
 Jafra v0.0.2 stores workload recordings on an `emptyDir` volume
 (`jafra-recordings`). The agent mounts the kubelet pods root to discover and
 delete closed files. Kind and generic Kubernetes are supported; OpenShift is
-supported with the SCC bindings under `deploy/openshift/`.
+supported with the SCC bindings under `deploy/openshift/`. See
+[Install on OpenShift](../deploy/openshift-install.md) and
+[OpenShift security and SCCs](../deploy/openshift-security.md).

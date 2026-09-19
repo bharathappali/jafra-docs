@@ -26,7 +26,9 @@ stitch-cache contents on that volume.
 ## v0.0.2 limitations
 
 - Supported environments include Kind, generic Kubernetes, and OpenShift
-  (with the supplied SCC bindings for OpenShift).
+  (with the supplied SCC bindings). See
+  [Install on OpenShift](../deploy/openshift-install.md) and
+  [OpenShift security and SCCs](../deploy/openshift-security.md).
 - Workload recordings use an `emptyDir` volume (`jafra-recordings`). The agent
   must mount the kubelet pods root to discover and delete closed files.
 - The controller has one replica and is not highly available.

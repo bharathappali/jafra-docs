@@ -86,5 +86,8 @@ analysis.
 v0.0.2 uses an `emptyDir` volume `jafra-recordings` on the workload and
 requires the agent to mount `/var/lib/kubelet/pods` (or your configured
 `JAFRA_RECORDING_ROOT`). Inspect Pod scheduling events, mount failures, and
-agent logs if discovery or deletion fails. OpenShift needs the SCC bindings
-under `deploy/openshift/`.
+agent logs if discovery or deletion fails.
+
+On OpenShift, SCC admission failures are covered in
+[OpenShift security and SCCs](../deploy/openshift-security.md). Install and
+verify with [Install on OpenShift](../deploy/openshift-install.md).
