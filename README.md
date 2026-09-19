@@ -1,22 +1,23 @@
 # Jafra documentation
 
-This repository contains the Docusaurus site for Jafra. The currently enabled
-documentation version is the frozen v0.0.1 release.
+This repository contains the Docusaurus site for Jafra. Enabled documentation
+versions are listed in `versions.json` (latest first). Authoring content lives
+in `docs/`; frozen snapshots live under `versioned_docs/`.
 
-## Documentation baseline
+## Documentation baseline (v0.0.2)
 
-Content for v0.0.1 is derived only from:
+Content for v0.0.2 is derived from:
 
-- `jafra-io` commit `8011c13db0efa3759898c8ded18410321b46c40c`
-- `jafra-controller` commit `530791e1e28948b735a62c9618572c11a0fb5e4f`
-- `jafra-agent` commit `2920ef299ba3414b3235ca52b36fcb15b98acb1d`
-- `jafra-analyzer` commit `feb0e868175f858a426be75e28ffc1fe45298c54`
+- `jafra-io` `dev` at the release pin commit (after this docs merge)
+- `jafra-controller` tag `v0.0.2` (`82f5306`)
+- `jafra-agent` tag `v0.0.2` (`f49dce3`)
+- `jafra-analyzer` tag `v0.0.2` (`d83b50c`)
 
-Do not use a current component checkout as evidence for v0.0.1.
+Do not use a newer untagged checkout as evidence for a frozen version page.
 
 ## Local development
 
-Node.js 20.17.0 or newer is required.
+Node.js matching `package.json` `engines.node` is required.
 
 ```bash
 npm ci
@@ -37,13 +38,16 @@ The generated output is written to `build/` and is not committed.
 
 ## Version maintenance
 
-`docs/` is the authoring copy. `versioned_docs/version-0.0.1/` is the
-published snapshot and v0.0.1 is the only version enabled in
-`docusaurus.config.ts`.
+`docs/` is the authoring copy. Published snapshots are
+`versioned_docs/version-<semver>/` and enabled via `versions.json` /
+`docusaurus.config.ts` (`includeCurrentVersion: false`).
 
-When correcting v0.0.1 documentation, apply the same release-accurate change
-to the authoring copy and snapshot. Do not introduce behavior from another
-release. Future release work should first establish its exact product and
-component baseline, then create a distinct Docusaurus version.
+When correcting a frozen version, apply the same release-accurate change to
+that snapshot (and to `docs/` only if it still matches that release). Future
+releases should update `docs/` first, then run:
+
+```bash
+npm run docusaurus -- docs:version <semver>
+```
 
 No site-publishing workflow is configured in this repository.
