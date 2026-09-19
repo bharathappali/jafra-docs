@@ -99,5 +99,5 @@ and JFR files.
 - [Request reports and event summaries](../use/analyzer-api.md)
 - [Understand how Jafra works](../concepts/architecture.md)
 - [Validate every stage of the pipeline](../operations/validate.md)
-- [Install on OpenShift](../deploy/openshift-install.md) (if you deploy to OCP)
+- [Install Jafra on OpenShift](./openshift-quick-start.md)
 - [OpenShift security and SCCs](../deploy/openshift-security.md)

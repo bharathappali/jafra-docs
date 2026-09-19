@@ -10,6 +10,7 @@ const sidebars: SidebarsConfig = {
       items: [
         'getting-started/requirements',
         'getting-started/quick-start',
+        'getting-started/openshift-quick-start',
         'use/profile-workload',
       ],
     },

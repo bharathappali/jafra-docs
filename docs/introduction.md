@@ -7,9 +7,10 @@ sidebar_position: 1
 
 <div className="release-scope">
 You are viewing the documentation for Jafra v0.0.2. This release supports
-Kubernetes (including Kind) and OpenShift. For OpenShift install and SCC
-security details, see [Install on OpenShift](deploy/openshift-install.md) and
-[OpenShift security and SCCs](deploy/openshift-security.md).
+Kubernetes (including Kind) and OpenShift. Start with
+[Install Jafra on Kind](getting-started/quick-start.md) or
+[Install Jafra on OpenShift](getting-started/openshift-quick-start.md). For
+SCC details, see [OpenShift security and SCCs](deploy/openshift-security.md).
 </div>
 
 JAFRA—**JVM Advanced Flight Recording with Async-profiler**—automates flight
@@ -105,5 +106,6 @@ that evidence.
   summaries.
 
 Continue with [How Jafra works](concepts/architecture.md), or review the
-[prerequisites](getting-started/requirements.md) and
-[install Jafra on Kind](getting-started/quick-start.md).
+[prerequisites](getting-started/requirements.md) and install on
+[Kind](getting-started/quick-start.md) or
+[OpenShift](getting-started/openshift-quick-start.md).

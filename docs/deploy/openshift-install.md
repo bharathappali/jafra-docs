@@ -8,6 +8,11 @@ only the node Agent needs elevated OpenShift permissions to discover those
 files under the kubelet path. Opted-in application Pods stay on standard
 restricted policies.
 
+For a first-time walkthrough, start with
+[Install Jafra on OpenShift](../getting-started/openshift-quick-start.md) in
+Getting Started. This page covers admin workflows, images, and teardown in
+more detail.
+
 For the security and SCC model, see
 [OpenShift security and SCCs](./openshift-security.md).
 
