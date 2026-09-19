@@ -3,7 +3,7 @@ title: How Jafra works
 sidebar_position: 1
 ---
 
-import architectureImage from '@site/assets/imgs/jafra_v001_arch_n_flow.png';
+import architectureImage from '@site/assets/imgs/jafra_v002_arch_n_flow.png';
 
 Jafra coordinates three distinct responsibilities: async-profiler records JVM
 events, node-local Agents collect completed JFR chunks, and the Analyzer
@@ -13,12 +13,12 @@ without packaging recording infrastructure into every service.
 <figure className="architecture-visual">
   <img
     src={architectureImage}
-    alt="JAFRA architecture and recording flow"
+    alt="JAFRA v0.0.2 architecture and recording flow"
   />
   <figcaption>
-    JAFRA architecture and recording flow (overview). v0.0.2 stores workload
-    recordings on an emptyDir volume discovered via the kubelet path, and keeps
-    only durable chunks on the analyzer PVC.
+    JAFRA v0.0.2 architecture and recording flow. Workload recordings use an
+    emptyDir volume discovered via the kubelet path; the analyzer PVC stores
+    durable chunks only, with an on-demand stitch-cache for analysis.
   </figcaption>
 </figure>
 
