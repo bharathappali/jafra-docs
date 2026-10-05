@@ -48,12 +48,12 @@ from streaming before the analyzer is ready.
 ## Published-image installer
 
 `pull-jafra.sh` pulls `${JAFRA_REGISTRY}/jafra-*:${JAFRA_VERSION}` (defaults
-`quay.io/bharathappali` / `0.0.2`), loads them into Kind when needed, applies
+`quay.io/jafra.io` / `0.0.2`), loads them into Kind when needed, applies
 manifests, and **pins** controller/agent/analyzer workloads to those images
 even if the YAML still lists another tag. Prefer:
 
 ```bash
-JAFRA_REGISTRY=quay.io/bharathappali JAFRA_VERSION=0.0.2 ./pull-jafra.sh --force-pull
+JAFRA_REGISTRY=quay.io/jafra.io JAFRA_VERSION=0.0.2 ./pull-jafra.sh --force-pull
 ```
 
 For OpenShift, use [Install on OpenShift](./openshift-install.md) and review

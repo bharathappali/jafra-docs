@@ -12,7 +12,7 @@ Analyzer API.
 Clone the Jafra repository with its components:
 
 ```bash
-git clone --recurse-submodules https://github.com/bharathappali/jafra-io.git
+git clone --recurse-submodules https://github.com/jafra-io/jafra-io.git
 cd jafra-io
 ```
 

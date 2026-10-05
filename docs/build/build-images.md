@@ -45,7 +45,7 @@ Useful options:
 ```
 
 The defaults are version `0.0.2`, platform `linux/amd64`, and registry
-`quay.io/bharathappali`. Override them with `JAFRA_VERSION`,
+`quay.io/jafra.io`. Override them with `JAFRA_VERSION`,
 `JAFRA_PLATFORM`, and `JAFRA_REGISTRY`.
 
 ## Build components individually
@@ -58,7 +58,7 @@ The controller has a self-contained build context:
 (cd jafra-controller && go test ./...)
 docker build \
   -f jafra-controller/Dockerfile \
-  -t quay.io/bharathappali/jafra-controller:0.0.2 \
+  -t quay.io/jafra.io/jafra-controller:0.0.2 \
   jafra-controller
 ```
 
@@ -71,7 +71,7 @@ container context must be the umbrella root:
 (cd jafra-agent && cargo test)
 docker build \
   -f jafra-agent/Dockerfile \
-  -t quay.io/bharathappali/jafra-agent:0.0.2 \
+  -t quay.io/jafra.io/jafra-agent:0.0.2 \
   .
 ```
 
@@ -85,16 +85,16 @@ The analyzer also consumes the shared protobuf:
 mvn -f jafra-analyzer/pom.xml test
 docker build \
   -f jafra-analyzer/Dockerfile \
-  -t quay.io/bharathappali/jafra-analyzer:0.0.2 \
+  -t quay.io/jafra.io/jafra-analyzer:0.0.2 \
   .
 ```
 
 ## Load into Kind
 
 ```bash
-kind load docker-image quay.io/bharathappali/jafra-controller:0.0.2 --name jafra
-kind load docker-image quay.io/bharathappali/jafra-agent:0.0.2 --name jafra
-kind load docker-image quay.io/bharathappali/jafra-analyzer:0.0.2 --name jafra
+kind load docker-image quay.io/jafra.io/jafra-controller:0.0.2 --name jafra
+kind load docker-image quay.io/jafra.io/jafra-agent:0.0.2 --name jafra
+kind load docker-image quay.io/jafra.io/jafra-analyzer:0.0.2 --name jafra
 ```
 
 The image names must match those in the v0.0.2 manifests unless you

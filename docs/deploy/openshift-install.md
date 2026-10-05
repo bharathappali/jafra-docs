@@ -20,13 +20,13 @@ For the security and SCC model, see
 
 - An OpenShift cluster and a `kubectl` context (or `oc login`) that can reach
   it
-- Images available to the cluster (`quay.io/bharathappali/jafra-*:0.0.2` or
+- Images available to the cluster (`quay.io/jafra.io/jafra-*:0.0.2` or
   your registry)
 - cert-manager for webhook TLS (install with the script or ask a cluster
   admin)
 - Cluster-admin (or equivalent) **once** to create the custom agent SCC and
   RoleBindings, unless an admin already applied
-  [`deploy/openshift/`](https://github.com/bharathappali/jafra-io/tree/dev/deploy/openshift)
+  [`deploy/openshift/`](https://github.com/jafra-io/jafra-io/tree/dev/deploy/openshift)
 
 Confirm the API surface:
 
@@ -63,7 +63,7 @@ pull from the registry (or use `imagePullSecrets` on the ServiceAccounts).
 2. Ensures namespace `jafra-system` exists.
 3. Creates custom SCC `jafra-agent` (and its `use` ClusterRole) if missing.
 4. Applies RoleBindings that attach SCCs to platform ServiceAccounts
-   ([`scc-platform.yaml`](https://github.com/bharathappali/jafra-io/blob/dev/deploy/openshift/scc-platform.yaml)).
+   ([`scc-platform.yaml`](https://github.com/jafra-io/jafra-io/blob/dev/deploy/openshift/scc-platform.yaml)).
 5. Deploys the same controller, analyzer, and agent manifests used on Kind.
 6. Switches the agent to `JAFRA_MODE=grpc` after the analyzer is ready.
 
@@ -110,7 +110,7 @@ Confirm injection and `/jfr-data` files, then use the
 
 ## Images and pull secrets
 
-Manifests default to `quay.io/bharathappali/jafra-{controller,agent,analyzer}:0.0.2`.
+Manifests default to `quay.io/jafra.io/jafra-{controller,agent,analyzer}:0.0.2`.
 If the cluster cannot pull publicly, mirror the images and either update the
 Deployment/DaemonSet image fields or attach `imagePullSecrets` to:
 

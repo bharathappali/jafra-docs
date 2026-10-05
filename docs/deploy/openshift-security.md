@@ -49,7 +49,7 @@ network, which user IDs, SELinux options, and so on.
   `system:openshift:scc:<scc-name>` for **built-in** SCCs so ServiceAccounts
   can be bound with `use`.
 - **Custom SCCs** do **not** get that ClusterRole automatically. Jafra’s
-  [`scc-jafra-agent.yaml`](https://github.com/bharathappali/jafra-io/blob/dev/deploy/openshift/scc-jafra-agent.yaml)
+  [`scc-jafra-agent.yaml`](https://github.com/jafra-io/jafra-io/blob/dev/deploy/openshift/scc-jafra-agent.yaml)
   therefore defines both the SCC and
   `system:openshift:scc:jafra-agent`.
 
@@ -67,7 +67,7 @@ cluster-scoped and normally requires cluster-admin.
 | Opted-in app Pods | app’s own SA | **default / restricted** | Injected `emptyDir` `jafra-recordings` only |
 
 Manifest source:
-[`deploy/openshift/scc-platform.yaml`](https://github.com/bharathappali/jafra-io/blob/dev/deploy/openshift/scc-platform.yaml).
+[`deploy/openshift/scc-platform.yaml`](https://github.com/jafra-io/jafra-io/blob/dev/deploy/openshift/scc-platform.yaml).
 
 ## What the custom `jafra-agent` SCC allows and denies
 
@@ -221,4 +221,4 @@ kubectl auth can-i create mutatingwebhookconfigurations --all-namespaces
 - [Recording storage and durability](../concepts/storage-and-durability.md)
 - [Jafra Agent reference](../reference/agent.md)
 - Upstream notes in the umbrella repo:
-  [`deploy/openshift/README.md`](https://github.com/bharathappali/jafra-io/blob/dev/deploy/openshift/README.md)
+  [`deploy/openshift/README.md`](https://github.com/jafra-io/jafra-io/blob/dev/deploy/openshift/README.md)

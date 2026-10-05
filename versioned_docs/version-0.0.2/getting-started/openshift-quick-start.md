@@ -17,7 +17,7 @@ admin workflows and teardown detail, see
 Clone the Jafra repository with its components:
 
 ```bash
-git clone --recurse-submodules https://github.com/bharathappali/jafra-io.git
+git clone --recurse-submodules https://github.com/jafra-io/jafra-io.git
 cd jafra-io
 ```
 
@@ -37,7 +37,7 @@ kubectl api-resources --api-group=security.openshift.io | head
 
 You need **cluster-admin once** (or an admin who already applied
 `deploy/openshift/` SCC bindings). Images must be pullable as
-`quay.io/bharathappali/jafra-*:0.0.2` (or retag / add pull secrets).
+`quay.io/jafra.io/jafra-*:0.0.2` (or retag / add pull secrets).
 
 ## 3. Install the product
 

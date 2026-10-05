@@ -21,7 +21,7 @@ const config: Config = {
   favicon: 'imgs/logo/favicon_io/favicon-32x32.png',
   url: 'https://docs.jafra.io',
   baseUrl: '/',
-  organizationName: 'bharathappali',
+  organizationName: 'jafra-io',
   projectName: 'jafra-docs',
   onBrokenLinks: 'throw',
   staticDirectories: ['static', 'assets'],
@@ -85,7 +85,7 @@ const config: Config = {
           })),
         },
         {
-          href: 'https://github.com/bharathappali/jafra-io',
+          href: 'https://github.com/jafra-io/jafra-io',
           label: 'jafra-io',
           position: 'right',
           className: 'github-repo-chip',
@@ -106,8 +106,8 @@ const config: Config = {
         {
           title: 'Source',
           items: [
-            {label: 'Jafra umbrella repository', href: 'https://github.com/bharathappali/jafra-io'},
-            {label: 'Documentation repository', href: 'https://github.com/bharathappali/jafra-docs'},
+            {label: 'Jafra umbrella repository', href: 'https://github.com/jafra-io/jafra-io'},
+            {label: 'Documentation repository', href: 'https://github.com/jafra-io/jafra-docs'},
           ],
         },
       ],

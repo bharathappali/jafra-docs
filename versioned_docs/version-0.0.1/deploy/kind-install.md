@@ -49,7 +49,7 @@ from streaming before the analyzer is ready.
 
 The v0.0.1 `pull-jafra.sh` pulls images named
 `quay.io/causa-ai-hub/jafra-*:0.0.1`, while the Kubernetes manifests
-refer to `quay.io/bharathappali/jafra-*:0.0.1`. The script does not rewrite
+refer to `quay.io/jafra.io/jafra-*:0.0.1`. The script does not rewrite
 the three manifest image references.
 
 Consequently, loading the pulled tags does not guarantee that Kind uses
